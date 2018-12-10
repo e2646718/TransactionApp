@@ -19,6 +19,10 @@ group = 'edu.dcccd'
 version = '0.0.1'
 sourceCompatibility = 10
 
+jar {
+    baseName = 'trans'
+}
+
 repositories {
     mavenCentral()
 }
@@ -28,10 +32,11 @@ dependencies {
     implementation('org.springframework.boot:spring-boot-starter-thymeleaf')
     implementation('org.springframework.boot:spring-boot-starter-web')
     implementation('org.springframework.boot:spring-boot-starter-data-jpa')
-    implementation('org.projectlombok:lombok')
+    implementation('org.projectlombok:lombok:1.18.4')
     runtimeOnly('com.h2database:h2')
     runtimeOnly('org.springframework.boot:spring-boot-devtools')
     testImplementation('org.springframework.boot:spring-boot-starter-test')
     implementation("org.springframework.boot:spring-boot-starter-security")
     implementation('org.springframework.boot:spring-boot-starter-data-rest')
+    compile 'com.heroku.sdk:heroku-deploy:2.0.6'
 }

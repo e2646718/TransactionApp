@@ -1,1 +1,1 @@
-# TransactionApp - Lesson 14 - Spring REST Services
+# TransactionApp - Lesson 15 - Deploy Spring App to Heroku
